@@ -2,8 +2,6 @@
 
 ![image](https://github.com/luiscoco/flutter_animatedcontainer_widget/assets/32194879/2e041616-bcb1-4e8b-bdc7-a472d7239ee5)
 
-
-
 ![image](https://github.com/luiscoco/flutter_animatedcontainer_widget/assets/32194879/fbb8c055-ee80-4a83-b970-6f739298ba58)
 
 ```dart
@@ -62,4 +60,21 @@ class _MyAnimatedContainerAppState extends State<MyAnimatedContainerApp> {
     );
   }
 }
+```
+
+You can see this piece of code the AnimatedContainer widget:
+
+```dart
+child: AnimatedContainer(
+            duration: Duration(seconds: 1),
+            width: _isExpanded ? 200.0 : 100.0,
+            height: _isExpanded ? 200.0 : 100.0,
+            color: _isExpanded ? Colors.blue : Colors.red,
+            child: Center(
+              child: Text(
+                _isExpanded ? 'Expanded' : 'Collapsed',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
 ```
